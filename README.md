@@ -121,18 +121,40 @@ Decisive is currently being explored as a decision intelligence framework for or
 
 Conversations with collaborators, researchers, and potential enterprise adopters are welcome.
 
-License
 
-Private / Proprietary.
 
-This repository is shared for evaluation and discussion purposes only.
-
-💡 Catatan penting (strategi GitHub):
-
-Kalau tujuanmu menarik perusahaan, biasanya README GitHub juga perlu satu bagian ini:
-
+💡
 # Architecture (Conceptual)
 
+```mermaid
+flowchart TD
+
+A[Decision Sources\nHumans / AI Systems / Workflows]
+
+A --> B[Decision Input Layer]
+
+B --> C[Decision Model Engine]
+
+C --> D[Evaluation & Scoring Layer]
+
+D --> E[Policy & Governance Engine]
+
+E --> F{Decision Outcome}
+
+F -->|Approved| G[Execution Systems]
+
+F -->|Escalate| H[Human Review]
+
+F -->|Rejected| I[Blocked Decision]
+
+G --> J[Decision Ledger]
+
+H --> J
+
+I --> J
+
+J --> K[Audit & Outcome Tracking]
+```
 Decisive is designed as a modular decision intelligence layer that can
 
 ---
