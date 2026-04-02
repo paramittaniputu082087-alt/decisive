@@ -1,4 +1,27 @@
 Decisive
+# Decisive — Pre-Action Risk Engine (Concept)
+
+Most systems detect threats after something goes wrong.
+
+This project explores a different approach:
+
+👉 Evaluate risk before an action is executed
+
+---
+
+Decisive is an experimental decision intelligence system designed to:
+- analyse context before execution  
+- evaluate risk signals  
+- support decisions (allow / flag / block)  
+
+---
+
+## Why this matters
+
+In environments like Web3, RWA, and automated systems,  
+reactive security is often too late.
+
+This project explores proactive decision-making before damage happens.
 
 Decisive is a decision intelligence stack designed to support structured, accountable, and repeatable decision-making in complex organisations.
 
